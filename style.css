@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    background-color: blueviolet;
+}
+
+header{
+    background-color: rgb(46, 16, 16);
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+span {
+    background-color: bisque;
+    height: 3px;
+    width: 30px;
+    display: block;
+    justify-content: flex-end;
+    transition: .5s;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(-500%);
+    transition: .8s ease-out;
+    position: relative;
+    z-index: -1;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.visivel {
+    transform: translateX(0);
+}
+
+.ativo .traco-1, .ativo .traco-3{
+    transform-origin: right center;
+}
+
+.ativo .traco-1{
+    transform: rotate(-45deg);
+}
+
+.ativo .traco-2{
+    transform: translateY(0);
+    opacity: 0;
+}
+
+.ativo .traco-3{
+    transform: rotate(45deg);
+}
+
+.burguer{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+}
